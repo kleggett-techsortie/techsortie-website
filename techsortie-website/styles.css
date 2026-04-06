@@ -1,16 +1,18 @@
 :root {
-    --color-bg-primary: #0a0e1a;
-    --color-bg-secondary: #111827;
-    --color-bg-tertiary: #1a2332;
+    --color-bg-primary: #2a2e3a;
+    --color-bg-secondary: #353945;
+    --color-bg-tertiary: #404555;
     
-    --color-text-primary: #e2e8f0;
-    --color-text-secondary: #94a3b8;
-    --color-text-muted: #64748b;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e8eaed;
+    --color-text-muted: #b8bcc4;
     
     --color-accent: #ef4444;
     --color-accent-bright: #ff5555;
+    --color-blue: #60a5fa;
+    --color-gunmetal: #6b7280;
     --color-success: #10b981;
-    --color-warning: #f59e0b;
+    --color-warning: #ef4444;
     
     --color-border: rgba(255, 255, 255, 0.1);
     --color-border-bright: rgba(255, 255, 255, 0.2);
@@ -50,8 +52,8 @@ body {
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -536,7 +538,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, var(--color-accent), transparent);
+    background: linear-gradient(90deg, var(--color-blue), var(--color-accent), transparent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform var(--timing-normal);
