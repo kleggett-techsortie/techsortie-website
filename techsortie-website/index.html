@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSortie | Offensive Security & Penetration Testing</title>
+    <meta name="description" content="Red teaming, penetration testing, and high-level IT security services. First strike, mission complete.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background grid -->
+    <div class="grid-bg"></div>
+    <div class="scan-line"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <div class="logo-wrapper">
+                <img src="techsortie_profile.png" alt="TechSortie" class="logo-icon">
+                <span class="logo-text">TECHSORTIE</span>
+            </div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#contact" class="cta-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="techsortie_banner.png" alt="TechSortie" class="banner-img">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-title glitch" data-text="OFFENSIVE SECURITY">OFFENSIVE SECURITY</h1>
+                </div>
+                <p class="hero-subtitle">
+                    <span class="typing-effect">Red teaming // Penetration testing // Circuit buildout</span>
+                </p>
+                <p class="hero-description">
+                    First strike. Mission complete. Deploy once, secure everything.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">
+                        <span>Deploy Mission</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="tel:757-816-2672" class="btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span>757-816-2672</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="terminal-title">reconnaissance.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">root@techsortie:~$</span>
+                            <span class="command">nmap -sV -sC target.network</span>
+                        </div>
+                        <div class="terminal-output">
+                            <span class="success">Starting Nmap 7.94 scan...</span><br>
+                            <span>PORT     STATE SERVICE     VERSION</span><br>
+                            <span class="warning">22/tcp   open  ssh         OpenSSH 8.2p1</span><br>
+                            <span class="warning">80/tcp   open  http        nginx 1.18.0</span><br>
+                            <span class="danger">443/tcp  open  ssl/http    nginx 1.18.0</span><br>
+                            <span class="success">| ssl-cert: Subject vulnerability detected</span><br>
+                            <span class="success">| Exploitable configuration found</span><br>
+                            <span class="prompt">root@techsortie:~$</span>
+                            <span class="command cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">[CAPABILITIES]</span>
+                <h2>Penetration vectors</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Red Team Operations</h3>
+                    <p>Full-scope adversary simulation. Social engineering, physical security, network intrusion. We think like attackers because we are.</p>
+                    <ul class="service-tags">
+                        <li>Adversary emulation</li>
+                        <li>Purple team exercises</li>
+                        <li>Breach simulation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Deep-dive security assessments. Web apps, APIs, mobile, infrastructure. Every vulnerability documented, every exploit proven.</p>
+                    <ul class="service-tags">
+                        <li>Web application</li>
+                        <li>Network infrastructure</li>
+                        <li>Mobile application</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 1v6m0 6v6M1 12h6m6 0h6" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Circuit Buildout</h3>
+                    <p>Enterprise network design and implementation. Redundant, scalable, secure from the ground up. Infrastructure that doesn't fail.</p>
+                    <ul class="service-tags">
+                        <li>Network architecture</li>
+                        <li>Datacenter deployment</li>
+                        <li>Zero-trust design</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>High-Level IT Consulting</h3>
+                    <p>Strategic security advisory. Compliance frameworks, security roadmaps, incident response planning. The big picture, executed tactically.</p>
+                    <ul class="service-tags">
+                        <li>Security strategy</li>
+                        <li>Compliance (SOC 2, ISO)</li>
+                        <li>Incident response</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">[ARSENAL]</span>
+                <h2>Tools & methodologies</h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-column">
+                    <h4>Offensive</h4>
+                    <ul>
+                        <li>Metasploit Framework</li>
+                        <li>Burp Suite Pro</li>
+                        <li>Cobalt Strike</li>
+                        <li>BloodHound / SharpHound</li>
+                        <li>Custom exploit development</li>
+                        <li>Kali Linux / Parrot OS</li>
+                    </ul>
+                </div>
+                <div class="expertise-column">
+                    <h4>Network & Infrastructure</h4>
+                    <ul>
+                        <li>Cisco / Juniper routing</li>
+                        <li>pfSense / OPNsense</li>
+                        <li>VLAN segmentation</li>
+                        <li>VPN architecture</li>
+                        <li>BGP / OSPF protocols</li>
+                        <li>Zero-trust networks</li>
+                    </ul>
+                </div>
+                <div class="expertise-column">
+                    <h4>Frameworks & Standards</h4>
+                    <ul>
+                        <li>MITRE ATT&CK</li>
+                        <li>OWASP Top 10</li>
+                        <li>PTES / OSSTMM</li>
+                        <li>NIST Cybersecurity</li>
+                        <li>PCI-DSS / HIPAA</li>
+                        <li>ISO 27001</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Vulnerabilities discovered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">First-attempt success rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Enterprise deployments</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-tag">[ESTABLISH COMMS]</span>
+                    <h2>Ready to deploy</h2>
+                    <p>First consultation is a reconnaissance mission. No commitment, just intelligence. Let's identify your attack surface.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:757-816-2672" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="method-label">Direct line</div>
+                                <div class="method-value">757-816-2672</div>
+                            </div>
+                        </a>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="method-label">Secure email</div>
+                                <div class="method-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b000e0505122b1f0e08031804191f020e45080406">[email&#160;protected]</a></div>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="method-label">Location</div>
+                                <div class="method-value">Northern Virginia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mission brief</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span>Send encrypted transmission</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="techsortie_profile.png" alt="TechSortie" class="footer-logo">
+                    <p>Offensive security operations.<br>First strike, mission complete.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Red Team Operations</a></li>
+                            <li><a href="#services">Penetration Testing</a></li>
+                            <li><a href="#services">Circuit Buildout</a></li>
+                            <li><a href="#services">IT Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:757-816-2672">757-816-2672</a></li>
+                            <li><a href="/cdn-cgi/l/email-protection#3e555b5050477e4a5b5d564d514c4a575b105d5153"><span class="__cf_email__" data-cfemail="600b050e0e192014050308130f121409054e030f0d">[email&#160;protected]</span></a></li>
+                            <li>Northern Virginia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom"
