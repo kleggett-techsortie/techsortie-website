@@ -1,18 +1,18 @@
 :root {
-    --color-bg-primary: #1a1d29;
-    --color-bg-secondary: #242837;
-    --color-bg-tertiary: #2d3142;
+    --color-bg-primary: #f8f9fa;
+    --color-bg-secondary: #ffffff;
+    --color-bg-tertiary: #e9ecef;
     
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #d4d8e1;
-    --color-text-muted: #9ca3af;
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #4a5568;
+    --color-text-muted: #718096;
     
-    --color-accent: #ef4444;
-    --color-accent-bright: #ff5555;
-    --color-blue: #3b82f6;
-    --color-gunmetal: #4a5568;
-    --color-success: #10b981;
-    --color-warning: #ef4444;
+    --color-accent: #dc2626;
+    --color-accent-bright: #ef4444;
+    --color-blue: #2563eb;
+    --color-gunmetal: #374151;
+    --color-success: #059669;
+    --color-warning: #dc2626;
     
     --color-border: rgba(255, 255, 255, 0.1);
     --color-border-bright: rgba(255, 255, 255, 0.2);
@@ -52,8 +52,8 @@ body {
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -79,7 +79,7 @@ body {
     pointer-events: none;
     z-index: 100;
     animation: scanMove 3s ease-in-out infinite;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 @keyframes scanMove {
@@ -109,9 +109,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 14, 26, 0.8);
+    background: rgba(248, 249, 250, 0.95);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: all var(--timing-normal);
 }
@@ -130,8 +130,8 @@ body {
 }
 
 .logo-icon {
-    width: 32px;
-    height: 32px;
+    height: 40px;
+    width: auto;
 }
 
 .logo-text {
@@ -232,6 +232,17 @@ body {
 .hero .container {
     position: relative;
     z-index: 1;
+}
+
+.hero-logo {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.main-logo {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
 }
 
 .hero .container {
@@ -820,8 +831,9 @@ body {
 }
 
 .footer-logo {
-    width: 40px;
-    height: 40px;
+    height: 60px;
+    width: auto;
+    margin-bottom: 16px;
 }
 
 .footer-brand p {
@@ -969,4 +981,4 @@ body {
         font-size: 12px;
         padding: 16px;
     }
-}
+} 
