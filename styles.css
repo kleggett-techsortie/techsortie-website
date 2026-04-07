@@ -172,47 +172,6 @@ body {
     overflow: hidden;
 }
 
-/* Large visible jet decorations */
-.hero::before,
-.hero::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-image: url('techsortie_icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.12;
-    filter: brightness(1.2) drop-shadow(0 0 30px rgba(255, 107, 107, 0.4));
-    pointer-events: none;
-    z-index: 0;
-}
-
-.hero::before {
-    top: 80px;
-    left: -20px;
-    animation: floatJet 15s ease-in-out infinite;
-}
-
-.hero::after {
-    bottom: 60px;
-    right: -20px;
-    animation: floatJet 18s ease-in-out infinite 2s;
-    transform: rotate(180deg);
-}
-
-@keyframes floatJet {
-    0%, 100% { 
-        transform: translateY(0px) translateX(0px);
-        opacity: 0.12;
-    }
-    50% { 
-        transform: translateY(-40px) translateX(30px);
-        opacity: 0.18;
-    }
-}
-
 /* Colorful glowing orbs */
 .hero-glow-1,
 .hero-glow-2 {
