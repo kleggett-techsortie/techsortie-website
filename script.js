@@ -72,8 +72,8 @@ document.getElementById('contactForm')?.addEventListener('submit', async functio
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.nav');
     if (window.scrollY > 50) {
-        nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+        nav.classList.add('scrolled');
     } else {
-        nav.style.boxShadow = 'none';
+        nav.classList.remove('scrolled');
     }
 });
