@@ -1,9 +1,9 @@
 :root {
-    /* Sophisticated gunmetal palette with color accents */
-    --color-bg-primary: #1c2128;
-    --color-bg-secondary: #262d36;
-    --color-bg-card: #2d3642;
-    --color-bg-elevated: #363e4a;
+    /* Deep blue palette matching the banner logo */
+    --color-bg-primary: #0a0e1f;
+    --color-bg-secondary: #141729;
+    --color-bg-card: #1a1e35;
+    --color-bg-elevated: #212642;
     
     --color-text-primary: #ffffff;
     --color-text-secondary: #c9d1d9;
@@ -101,7 +101,7 @@ body {
 }
 
 .nav-logo {
-    height: 50px;
+    height: 80px;
     width: auto;
     filter: drop-shadow(0 2px 8px rgba(255, 107, 107, 0.4));
     transition: all 0.3s ease;
@@ -177,33 +177,34 @@ body {
 .hero-glow-2 {
     position: absolute;
     border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.2;
+    filter: blur(140px);
+    opacity: 0.15;
     pointer-events: none;
     animation: pulse 10s ease-in-out infinite;
     z-index: 0;
+    mix-blend-mode: screen;
 }
 
 .hero-glow-1 {
-    top: -150px;
-    left: -150px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, var(--color-accent-red), var(--color-accent-orange));
+    top: -250px;
+    left: -250px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 107, 107, 0.4) 0%, rgba(255, 169, 77, 0.2) 40%, transparent 70%);
 }
 
 .hero-glow-2 {
-    bottom: -150px;
-    right: -150px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, var(--color-accent-cyan), var(--color-accent-blue));
+    bottom: -250px;
+    right: -250px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.4) 0%, rgba(77, 171, 247, 0.2) 40%, transparent 70%);
     animation-delay: 5s;
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 0.2; transform: scale(1); }
-    50% { opacity: 0.3; transform: scale(1.1); }
+    0%, 100% { opacity: 0.12; transform: scale(1); }
+    50% { opacity: 0.2; transform: scale(1.05); }
 }
 
 .container {
@@ -752,7 +753,7 @@ body {
 }
 
 .footer-logo {
-    height: 55px;
+    height: 80px;
     width: auto;
     margin-bottom: 24px;
     filter: drop-shadow(0 2px 12px rgba(255, 107, 107, 0.4));
