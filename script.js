@@ -12,6 +12,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Scroll-triggered animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe service cards
+document.querySelectorAll('.service-card').forEach((card, index) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+    observer.observe(card);
+});
+
+// Observe expertise columns
+document.querySelectorAll('.expertise-column').forEach((column, index) => {
+    column.style.opacity = '0';
+    column.style.transform = 'translateY(30px)';
+    column.style.transition = `all 0.6s ease ${index * 0.15}s`;
+    observer.observe(column);
+});
+
+// Observe contact section
+const contactSection = document.querySelector('.contact-content');
+if (contactSection) {
+    contactSection.style.opacity = '0';
+    contactSection.style.transform = 'translateY(30px)';
+    contactSection.style.transition = 'all 0.8s ease';
+    observer.observe(contactSection);
+}
+
 // Contact form handling
 document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
